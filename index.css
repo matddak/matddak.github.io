@@ -1,0 +1,384 @@
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*laptop*/
+@media screen and (min-width: 1024px) {
+
+}
+
+/*tablet*/
+@media (max-width: 1023px) and (min-width: 768px) {
+
+}
+
+/*mobile*/
+@media (max-width: 767px) and (min-width: 480px) {
+
+}
+
+@keyframes move-text {
+    from{
+        position: relative;
+        top: -1000px;
+        opacity: 0%;
+    }
+    to{
+        position: relative;
+        top: 0;
+        opacity: 100%;
+    }
+}
+
+@keyframes picture{
+    from{
+        position: relative;
+        left: -1000px;
+        opacity: 0%;
+    }
+    to{
+        position: relative;
+        left: 0;
+        opacity: 100%;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'GmarketSans';
+    margin: 0;
+    padding: 0;
+    line-height: 2.2rem;
+}
+
+/*메인 페이지*/
+header {
+    background-color: #ed851b;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
+header > .bg {
+    width: 1240px;
+    margin: auto;
+    text-align: center;
+}
+
+.logo {
+    padding-top: 50px;
+    text-align: left;
+}
+
+.title-wrap {
+    margin-bottom: 30px;
+}
+
+.title-wrap > .title-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.title-2 {
+    font-size: 68px;
+    font-weight: 500;
+    letter-spacing: -4.0px;
+    line-height: 142px;
+    margin-right: 20px;
+}
+
+.text{
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: -1.4px;
+    line-height: 20px;
+}
+
+.app-wrap {
+    background-image: url("/image/01/01_06_bg_circle.png") ;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.app-ui{
+    display: flex;
+    justify-content: center;
+}
+
+.app-ui img {
+    margin-left: 30px;
+}
+
+.store{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+
+/*맛딱드림이란?*/
+
+.main-info {
+    text-align: center;
+    width: 1240px;
+    margin: 100px auto;
+    color: #333333;
+}
+
+.info-wrap {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 2.2rem;
+    letter-spacing: -1.4px;
+    margin-bottom: 50px;
+}
+
+.info-title{
+    font-weight: 500;
+    font-size: 50px;
+    color: #eb8512;
+    letter-spacing: -2.5px;
+    margin-bottom: 30px;
+}
+
+
+.info-wrap span {
+    font-weight: 500;
+}
+
+.content-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.content-wrap > div {
+    text-align: left;
+}
+
+.content-wrap > div > div:first-of-type{
+    width: 400px;
+    height: 181px;
+    border-bottom: #eb8512 solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-wrap > div:first-child {
+    animation: picture 0.5s ease-in;
+}
+
+.content-wrap > div:nth-child(2) {
+    animation: picture 1s ease-in;
+}
+
+.content-wrap > div:nth-child(3) {
+    animation: picture 1.5s ease-in;
+}
+
+.text-title {
+    font-size: 30px;
+    margin: 20px 12px 15px;
+    color: #eb8512;
+    font-weight: 500;
+    letter-spacing: -1.2px;
+}
+
+.text-content {
+    margin-left: 13px;
+    font-size: 22px;
+    font-weight: 100;
+    letter-spacing: -1.2px;
+    line-height: 2.2rem;
+}
+
+/* UI 드림 */
+section:nth-of-type(2){
+    background-color: #f2f2f2;
+}
+
+.ui-wrap {
+    text-align: center;
+    width: 1240px;
+    margin: 100px auto;
+    color: #333333;
+}
+
+.div-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ui-left {
+    text-align: left;
+    margin: auto 0;
+}
+
+.ui-left > div:first-of-type {
+    margin-left: 10px;
+}
+
+.ui-left > .ui-title {
+    color: #eb8512;
+    font-weight: 500;
+    font-size: 50px;
+    margin: 5px 10px 20px;
+    letter-spacing: -3.0px;
+    line-height: 48px;
+}
+
+.text-content {
+    line-height: 2.2rem;
+    font-size: 25px;
+}
+
+.ui-wrap span{
+    font-weight: 500;
+}
+
+.ui-right {
+    margin: 100px 0;
+}
+
+/*운송수단 타입*/
+.ride-wrap {
+    text-align: center;
+    width: 1240px;
+    margin: 100px auto;
+    color: #333333;
+    line-height: 2.5rem;
+}
+
+.ride-title {
+    font-weight: 500;
+    color: #eb8512;
+    font-size: 50px;
+    letter-spacing: -2.5px;
+    margin-bottom: 30px;
+}
+
+.ride-title-wrap {
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    letter-spacing: -1.0px;
+
+}
+
+.ride-title-wrap span {
+    font-weight: 500;
+}
+
+.ride-content {
+    display: flex;
+    justify-content: space-between;
+}
+.ride {
+    width: 300px;
+    height: 300px;
+    background-color: #f2f2f2;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    font-size: 25px;
+    box-shadow: 5px 5px 10px #b7b7b7;
+}
+.ride > .ride-type {
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.ride > .ride-text {
+    font-weight: 100;
+}
+
+/* 질문 */
+section:nth-of-type(4){
+    background-color: #f2f2f2;
+    height: 100%;
+}
+
+.answer-wrap {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    height: 100%;
+    text-align: center;
+    margin: 100px auto 0;
+    color: #333333;
+}
+
+.answer-title {
+    color: #eb8512;
+    font-size: 50px;
+}
+
+.qa-box {
+    width: 1240px;
+    margin: 50px auto;
+}
+
+.answer-box {
+    font-size: 25px;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.answer-box > .question {
+    font-size: 35px;
+    color: #eb8512;
+    display: flex;
+    font-weight: 500;
+    margin: 0 0 20px 30px;
+    padding-top: 50px;
+}
+
+.q-big{
+    margin-right: 20px;
+}
+
+.answer {
+    font-weight: 300;
+    margin-left: 85px;
+    margin-right: 50px;
+    text-align: left;
+    padding-bottom: 50px;
+    letter-spacing: -1.4px;
+}
+
+
+/*footer*/
+footer {
+    width: 100%;
+    background-color: #333333;
+}
+
+.footer-wrap {
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    color: #ffffff;
+    font-family: 'Pretendard-Regular';
+}
+
+.footer-wrap img {
+    margin-top: 5px;
+}
+
+.footer-wrap > div div {
+    line-height: 1.7rem;
+}
+
